@@ -32,7 +32,6 @@ dependencies:
   flutter_mobx: ^2.0.6+5
   # G
   get_it: ^7.2.0
-  google_fonts: ^4.0.3
   # H
   http: ^0.13.5
   # I
@@ -89,10 +88,15 @@ flutter:
     - assets/lang/
 
   fonts:
-    - family: ProductSans
+    - family: Poppins
       fonts:
-        - asset: assets/fonts/Product-Sans-Regular.ttf
-        - asset: assets/fonts/Product-Sans-Italic.ttf
-          style: italic
-        - asset: assets/fonts/Product-Sans-Bold.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
           weight: 700

@@ -19,14 +19,13 @@
 /// `import` this file in your project, anywhere you needed it.
 /// `import 'path/to/setting.dart';`
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppThemeData {
   static const _lightFillColor = Colors.black;
   static const _darkFillColor = Colors.white;
 
-  static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
-  static final Color _darkFocusColor = Colors.white.withOpacity(0.12);
+  static final Color _lightFocusColor = Colors.black.withAlpha(31);
+  static final Color _darkFocusColor = Colors.white.withAlpha(31);
 
   static ThemeData lightThemeData =
   themeData(lightColorScheme, _lightFocusColor);
@@ -51,7 +50,7 @@ class AppThemeData {
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
         backgroundColor: Color.alphaBlend(
-          _lightFillColor.withOpacity(0.80),
+          _lightFillColor.withAlpha(204),
           _darkFillColor,
         ),
         contentTextStyle: _textTheme.titleMedium!.apply(color: _darkFillColor),
@@ -88,21 +87,63 @@ class AppThemeData {
     brightness: Brightness.dark,
   );
 
+  //static const _light = FontWeight.w300;
   static const _regular = FontWeight.w400;
   static const _medium = FontWeight.w500;
   static const _semiBold = FontWeight.w600;
   static const _bold = FontWeight.w700;
 
+
   static final TextTheme _textTheme = TextTheme(
-    headlineMedium: GoogleFonts.montserrat(fontWeight: _bold, fontSize: 20.0),
-    bodySmall: GoogleFonts.oswald(fontWeight: _semiBold, fontSize: 16.0),
-    headlineSmall: GoogleFonts.oswald(fontWeight: _medium, fontSize: 16.0),
-    titleMedium: GoogleFonts.montserrat(fontWeight: _medium, fontSize: 16.0),
-    labelSmall: GoogleFonts.montserrat(fontWeight: _medium, fontSize: 12.0),
-    bodyLarge: GoogleFonts.montserrat(fontWeight: _regular, fontSize: 14.0),
-    titleSmall: GoogleFonts.montserrat(fontWeight: _medium, fontSize: 14.0),
-    bodyMedium: GoogleFonts.montserrat(fontWeight: _regular, fontSize: 16.0),
-    titleLarge: GoogleFonts.montserrat(fontWeight: _bold, fontSize: 16.0),
-    labelLarge: GoogleFonts.montserrat(fontWeight: _semiBold, fontSize: 14.0),
+    headlineMedium: TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 20.0,
+      fontWeight: _bold
+    ),
+    bodySmall: TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 16.0,
+      fontWeight: _semiBold
+    ),
+    headlineSmall: TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 16.0,
+      fontWeight: _medium
+    ),
+    titleMedium: TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 16.0,
+      fontWeight: _medium
+    ),
+    labelSmall:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 12.0,
+      fontWeight: _medium
+    ),
+    bodyLarge:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 14.0,
+      fontWeight: _regular
+    ),
+    titleSmall:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 14.0,
+      fontWeight: _medium
+    ),
+    bodyMedium:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 16.0,
+      fontWeight: _regular
+    ),
+    titleLarge:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 16.0,
+      fontWeight: _bold
+    ),
+    labelLarge:TextStyle(
+       fontFamily: 'Poppins',
+       fontSize: 14.0,
+      fontWeight: _semiBold
+    ),
   );
 }
