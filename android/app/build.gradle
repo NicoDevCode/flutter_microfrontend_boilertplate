@@ -40,7 +40,24 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions "default"
+    productFlavors {
+        staging {
+            dimension "default"
+            resValue "string", "app_name", "Flavors staging"
+            applicationIdSuffix ".staging"
+        }
+        production {
+            dimension "default"
+            resValue "string", "app_name", "Flavors production"
+            applicationIdSuffix ".production"
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
