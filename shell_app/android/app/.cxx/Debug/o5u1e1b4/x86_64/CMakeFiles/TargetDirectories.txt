@@ -1,0 +1,2 @@
+/Users/nicolasescorcia/MobileRepos/flutter_boilerplate_project-master/shell_app/android/app/.cxx/Debug/o5u1e1b4/x86_64/CMakeFiles/edit_cache.dir
+/Users/nicolasescorcia/MobileRepos/flutter_boilerplate_project-master/shell_app/android/app/.cxx/Debug/o5u1e1b4/x86_64/CMakeFiles/rebuild_cache.dir

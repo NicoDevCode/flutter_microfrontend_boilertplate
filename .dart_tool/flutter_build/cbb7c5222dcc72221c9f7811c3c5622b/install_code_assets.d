@@ -1,0 +1,1 @@
+ /Users/nicolasescorcia/Mobile\ Repos/flutter_boilerplate_project-master/.dart_tool/flutter_build/cbb7c5222dcc72221c9f7811c3c5622b/native_assets.json: 
