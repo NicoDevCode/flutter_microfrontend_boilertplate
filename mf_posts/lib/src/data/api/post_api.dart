@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:mf_posts/src/data/api/dio_client.dart';
 import 'package:mf_posts/src/data/constants/endpoints.dart';
 import 'package:mf_posts/src/domain/entity/post.dart';
-import 'package:mf_posts/src/domain/entity/post_list.dart';
 
 class PostApi {
   // dio instance
