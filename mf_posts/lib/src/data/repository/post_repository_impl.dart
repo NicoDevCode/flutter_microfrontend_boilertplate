@@ -1,11 +1,9 @@
 import 'dart:async';
 
 import 'package:mf_posts/src/data/api/post_api.dart';
-import 'package:mf_posts/src/data/constants/db_constants.dart';
 import 'package:mf_posts/src/data/datasource/post_datasource.dart';
 import 'package:mf_posts/src/domain/entity/post.dart';
 import 'package:mf_posts/src/domain/repository/post_repository.dart';
-import 'package:sembast/sembast.dart';
 
 class PostRepositoryImpl implements PostRepository {
   // data source object

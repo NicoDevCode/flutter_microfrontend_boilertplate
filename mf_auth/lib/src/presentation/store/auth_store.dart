@@ -1,4 +1,3 @@
-import 'package:mobx/mobx.dart';
 import 'package:mf_auth/src/domain/entity/user.dart';
 import 'package:mf_auth/src/domain/repository/auth_repository.dart';
 import 'package:shared_dependencies/shared_dependencies.dart';

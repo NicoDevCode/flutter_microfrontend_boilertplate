@@ -1,6 +1,5 @@
 import 'package:mobx/mobx.dart';
 import 'package:mf_auth/mf_auth.dart';
-import 'package:get_it/get_it.dart';
 
 part 'profile_store.g.dart';
 

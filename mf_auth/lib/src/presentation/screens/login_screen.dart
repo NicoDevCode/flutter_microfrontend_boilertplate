@@ -7,7 +7,6 @@ import 'package:mf_auth/src/presentation/widgets/empty_app_bar_widget.dart';
 import 'package:mf_auth/src/presentation/widgets/rounded_button_widget.dart';
 import 'package:mf_auth/src/presentation/widgets/textfield_widget.dart';
 import 'package:shared_dependencies/shared_dependencies.dart';
-import 'package:shared_dependencies/src/localization/app_localization.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

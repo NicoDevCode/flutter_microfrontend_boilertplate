@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:shared_dependencies/shared_dependencies.dart';
 
 /// Clase que proporciona acceso a temas y estilos para el módulo de autenticación

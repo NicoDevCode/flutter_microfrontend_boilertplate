@@ -18,7 +18,9 @@ class _PostListScreenState extends State<PostListScreen> {
   @override
   void initState() {
     super.initState();
-    _fetchPosts();
+    if (_postStore.posts.isEmpty) {
+      _fetchPosts();
+    }
   }
 
   _fetchPosts() {
